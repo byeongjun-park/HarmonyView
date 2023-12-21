@@ -77,7 +77,7 @@ body {
 }
 
 .publication-authors a:hover {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 .author-block {
