@@ -72,9 +72,9 @@ body {
     margin-top: -1.25rem;
 }
 
-.publication-authors a {
-   color: hsl(204, 86%, 53%) !important;
-}
+/*.publication-authors a {*/
+/*   color: hsl(204, 86%, 53%) !important;*/
+/*}*/
 
 .publication-authors a:hover {
     text-decoration: underline;
