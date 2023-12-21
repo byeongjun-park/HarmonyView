@@ -76,9 +76,9 @@ body {
    color: hsl(204, 86%, 53%) !important;
 }
 
-/*.publication-authors a:hover {*/
-/*    text-decoration: underline;*/
-/*}*/
+.publication-authors a:hover {
+    text-decoration: none;
+}
 
 .author-block {
   display: inline-block;
