@@ -1,111 +1,49 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="Visual Instruction Tuning">
-  <meta name="keywords" content="multimodal chatbot">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DiffBlender: Scalable and Composable Multimodal Text-to-Image Diffusion Models">
+  <!-- <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/> -->
+  <!-- <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/> -->
+  <!-- <meta property="og:url" content="URL OF THE WEBSITE"/> -->
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <!-- <meta property="og:image" content="static/image/your_banner_image.png" /> -->
+  <!-- <meta property="og:image:width" content="1200"/> -->
+  <!-- <meta property="og:image:height" content="630"/> -->
+
+
+  <!-- <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG"> -->
+  <!-- <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG"> -->
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <!-- <meta name="twitter:image" content="static/images/your_twitter_banner_image.png"> -->
+  <!-- <meta name="twitter:card" content="summary_large_image"> -->
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="T2I Generation, Diffusion, Multimodal">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>HarmonyView</title>
 
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-  <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/954/954591.png">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+  <title>DiffBlender: Scalable and Composable Multimodal Text-to-Image Diffusion Models</title>
+  <link rel="icon" href="./static/images/icon.png">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"></script>
-  <script type="module" src="https://gradio.s3-us-west-2.amazonaws.com/3.27.0/gradio.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
 </head>
-
-<style>
-  .expandable-card .card-text-container {
-    max-height: 200px;
-    overflow-y: hidden;
-    position: relative;
-  }
-
-  .expandable-card.expanded .card-text-container {
-    max-height: none;
-  }
-
-  .expand-btn {
-    position: relative;
-    display: none;
-    background-color: rgba(255, 255, 255, 0.8);
-    /* margin-top: -20px; */
-    /* justify-content: center; */
-    color: #510c75;
-    border-color: transparent;
-  }
-
-  .expand-btn:hover {
-    background-color: rgba(200, 200, 200, 0.8);
-    text-decoration: none;
-    border-color: transparent;
-    color: #510c75;
-  }
-
-  .expand-btn:focus {
-    outline: none;
-    text-decoration: none;
-  }
-
-  .expandable-card:not(.expanded) .card-text-container:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 90px;
-    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 1));
-  }
-
-  .expandable-card:not(.expanded) .expand-btn {
-    margin-top: -40px;
-  }
-
-  .card-body {
-    padding-bottom: 5px;
-  }
-
-  .vertical-flex-layout {
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-  }
-
-  .figure-img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  .adjustable-font-size {
-    font-size: calc(0.5rem + 2vw);
-  }
-
-  .chat-history {
-    flex-grow: 1;
-    overflow-y: auto;
-    /* overflow-x: hidden; */
-    padding: 5px;
-    border-bottom: 1px solid #ccc;
-    margin-bottom: 10px;
-  }
-
-  #gradio pre {
-    background-color: transparent;
-  }
-</style>
-
 <body>
 
   <section class="hero">
@@ -116,19 +54,19 @@
             <h1 class="title is-1 publication-title">HarmonyView: Harmonizing Consistency and Diversity in One-Image-to-3D</h1>
             <div class="is-size-4 publication-authors">
               <span class="author-block" style="color:#f68946;font-weight:normal;">
-                <a href="https://byeongjun-park.github.io//" style="color:#f68946;font-weight:normal;">Byeongjun Park<sup>*</sup></a>,
+                <a href="https://byeongjun-park.github.io/" style="color:#f68946;font-weight:normal;">Byeongjun Park<sup>*</sup></a>,
               </span>
               <span class="author-block" style="color:#f68946;font-weight:normal;">
                 <a href="https://sangminwoo.github.io/" style="color:#f68946;font-weight:normal;">Sangmin Woo<sup>*</sup></a>,
               </span>
               <span class="author-block" style="color:#008AD7; font-weight:normal;">
-                Hyojun Go
+                Hyojun Go,
               </span>
               <span class="author-block" style="color:#008AD7;font-weight:normal;">
                 Jin-Young Kim,
               </span>
               <span class="author-block" style="color:#f68946;font-weight:normal;">
-                Changick Kim,
+                Changick Kim<sup>#8224;</sup>
               </span>
             </div>
 
@@ -139,6 +77,7 @@
 
             <div class="is-size-5 publication-authors">
               <span class="author-block"><sup>*</sup>Equal Contribution</span>
+              <span class="author-block"><sup>#8224;</sup>Corresponding Author</span>
             </div>
 
             <div class="column has-text-centered">
