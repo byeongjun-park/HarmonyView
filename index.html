@@ -217,7 +217,7 @@
 
 
   
-<section class="section">
+  <section class="section">
   <!-- Results. -->
   <div class="columns is-centered has-text-centered">
     <div class="column is-six-fifths">
@@ -226,7 +226,7 @@
   </div>
   <!-- </div> -->
   <!--/ Results. -->    
-<div class="container is-max-desktop">
+  <div class="container is-max-desktop">
 
   <div class="columns is-centered">
     <div class="column is-full-width">
@@ -235,8 +235,8 @@
           Based on the COCO dataset, we interact with language-only GPT-4, and collect 158K unique language-image instruction-following samples in total, including 58K in conversations, 23K in detailed description, and 77k in complex reasoning, respectively. Please check out ``LLaVA-Instruct-150K''' on 
           <a href="https://huggingface.co/datasets/liuhaotian/LLaVA-Instruct-150K">[HuggingFace Dataset]</a>.
 
-<!-- CSS Code: Place this code in the document's head (between the 'head' tags) -->
-<style>
+  <!-- CSS Code: Place this code in the document's head (between the 'head' tags) -->
+  <style>
   table.GeneratedTable {
     width: 100%;
     background-color: #ffffff;
@@ -287,7 +287,7 @@
       </tr>
     </tbody>
   </table>
-</div>
+  </div>
   <!-- Codes by Quackit.com -->
   
         </p>
@@ -295,11 +295,6 @@
           For each subset, we visualize the root noun-verb pairs for the instruction and response. For each chart, please click the link for the interactive page to check out the noun-verb pairs whose frequency is higher the given number.        
         </p>
       </div>
-
-  
-
-
-
 
       <div class="columns is-centered has-text-centered">
       <div class="column is-six-fifths" style="display: flex; align-items: flex-start; justify-content: center;">  
@@ -351,12 +346,10 @@
 
     </div>
   </div>
-
-
-</section>
+  </section>
  
 
-<section class="section">
+  <section class="section">
   <!-- Results. -->
   <div class="columns is-centered has-text-centered">
     <div class="column is-six-fifths">
@@ -365,7 +358,7 @@
   </div>
   <!-- </div> -->
   <!--/ Results. -->    
-<div class="container is-max-desktop">
+  <div class="container is-max-desktop">
 
   <div class="columns is-centered">
     <div class="column is-full-width">
@@ -388,18 +381,14 @@
         <div style="text-align: center;">
           <img id="teaser" width="70%" src="images/llava_arch.png">     
         </div>
-
-      
       </centering>           
     </div>
   </div>
-
-
-</section>
+  </section>
   
 
 
-<section class="section">
+  <section class="section">
   <!-- Results. -->
   <div class="columns is-centered has-text-centered">
     <div class="column is-six-fifths">
@@ -411,7 +400,7 @@
 
   <!-- </div> -->
   <!--/ Results. -->    
-<div class="container is-max-desktop">
+  <div class="container is-max-desktop">
 
 
   <!-- Grounedtext2img. -->
@@ -441,86 +430,8 @@
               
     </div>
   </div>
-</section>
+  </section>
 
-
-
-
-<section class="section">
-
-  <div class="columns is-centered has-text-centered">
-    <div class="column is-six-fifths">
-      <h2 class="title is-3"> Examples on Visual Instruction Following</h2>
-    </div>
-  </div>
-
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-six-fifths">
-         <h2 class="title is-4">Visual Reasoning on two examples from <a href="https://arxiv.org/abs/2303.08774">OpenAI GPT-4 Technical Report</a></h2>
-      </div>
-      </div>  
-
-    <div class="columns is-centered has-text-centered">
-    <div class="column is-six-fifths">
-      <img id="teaser" width="35%" src="images/cmp_ironing.png">
-      <img id="teaser" width="38%" src="images/cmp_chicken_nugget.png">
-    </div>
-    </div>  
-
-  
-
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-six-fifths">
-         <h2 class="title is-4">Optical character recognition (OCR)</a></h2>
-      </div>
-      </div>  
-
-    <div class="columns is-centered has-text-centered">
-    <div class="column is-six-fifths" style="display: flex; align-items: flex-start; justify-content: center;">
-        <img id="teaser" width="32%" src="images/ocr/llava_example_cvpr2023.png">
-        <img id="teaser" width="32%" src="images/ocr/llava_example_cvinw_logo.png">
-        <img id="teaser" width="32%" src="images/ocr/example_llava_exmaple.png">
-    </div>
-    </div>  
-
-  
-
-  
-
-
-  <div class="container mt-5">
-    <!-- <h2 class="text-center mb-5">Who's GPT-4's favorite? Battles between State-of-the-Art Chatbots</h2> -->
-    <!-- Selection -->
-    <div class="form-row" style="justify-content: flex-end;">
-      <div class="form-group col-md-1">
-        <div class="col-md-2" style="width: 100%"><label>&nbsp;</label></div>
-        <div class="btn-group" role="group" aria-label="Left and Right Controller"
-          style="width: 100%;align-items: flex-end;justify-content: center;flex-direction: row;display: flex;">
-          <button type="button" class="form-control btn btn-primary" id="prev-question"><i
-              class="material-icons">keyboard_arrow_left</i></button>
-          <button type="button" class="form-control btn btn-primary" id="next-question"><i
-              class="material-icons">keyboard_arrow_right</i></button>
-
-        </div>
-      </div>
-    </div>
-
-    <!-- Question Card -->
-    <div style="display: flex; justify-content: center; align-items: center;">
-      <div class="card mb-4" style="width: 100%; display: flex; align-items: center;">
-        <!-- <p><b>Description:</b> Monalisa is a famous painting by Leonardo da Vinci. </p> -->
-
-        <div class="card-body" id="selected-question" style="display: flex; height: 80vh;">
-          <div class="chat-history">
-            <!-- Add your chat messages here -->
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
 
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
