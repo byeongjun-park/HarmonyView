@@ -198,14 +198,12 @@
           <h2 class="title is-3">Summary</h2>
           <div class="content has-text-justified">
             <p>
-              Recent progress in single-image 3D generation highlights the importance of multi-view coherency, leveraging 3D priors from large-scale diffusion models pretrained on Internet-scale images. However, the aspect of novel-view diversity remains underexplored within the research landscape due to the ambiguity in converting a 2D image into 3D content, where numerous potential shapes can emerge.
+              Recent progress in single-image 3D generation highlights the importance of multi-view coherency, leveraging 3D priors from large-scale diffusion models pretrained on Internet-scale images. However, the aspect of novel-view diversity remains underexplored within the research landscape due to the ambiguity in converting a 2D image into 3D content, where numerous potential shapes can emerge. Here, we aim to address this research gap by simultaneously addressing both consistency and diversity.
               <ol type="1">
-                <li><b>Multimodal Instruct Data</b>. <span style="font-size: 95%;">We present the first attempt to use <a href="https://openai.com/research/gpt-4">language-only GPT-4</a> to generate multimodal language-image instruction-following data. </span></li>
-                <li><b>LLaVA Model</b>. <span style="font-size: 95%;">We introduce <it><b>LLaVA</b> (<b>L</b>arge <b>L</b>anguage-<b>a</b>nd-<b>V</b>ision <b>A</b>ssistant)</it>, an end-to-end trained large multimodal model that connects a vision encoder and LLM for general-purpose visual and language understanding.</li>
-                <li><b>Performance</b>. <span style="font-size: 95%;">Our early experiments show that LLaVA demonstrates impressive multimodel chat abilities, sometimes exhibiting the behaviors of multimodal GPT-4 on unseen images/instructions, and yields a 85.1% relative score compared with GPT-4 on a synthetic multimodal instruction-following dataset.
-                  When fine-tuned on <a href="https://scienceqa.github.io/">Science QA</a>, the synergy of LLaVA and GPT-4  achieves a new state-of-the-art accuracy of 92.53%.</li>
-                <li><b>Open-source</b>. <span style="font-size: 95%;">We make GPT-4 generated visual instruction tuning data, our model and code base publicly available.</li>
-              </ol>  
+                <li><b>Consistency</b>. <span style="font-size: 95%;">We present the first attempt to use <a href="https://openai.com/research/gpt-4">language-only GPT-4</a> to generate multimodal language-image instruction-following data. </span></li>
+                <li><b>Diversity</b>. <span style="font-size: 95%;">We introduce <it><b>LLaVA</b> (<b>L</b>arge <b>L</b>anguage-<b>a</b>nd-<b>V</b>ision <b>A</b>ssistant)</it>, an end-to-end trained large multimodal model that connects a vision encoder and LLM for general-purpose visual and language understanding.</li>
+                <li><b>Consistency-Diversity (CD) Score</b>. <span style="font-size: 95%;">We make GPT-4 generated visual instruction tuning data, our model and code base publicly available.</li>
+              </ol>
            </p>
   
           </div>
