@@ -1,0 +1,26 @@
+--extra-index-url https://download.pytorch.org/whl/cu111
+torch==1.10.2
+pytorch_lightning==1.9.0
+Pillow==10.0.0
+opencv-python
+transformers
+tensorboard
+taming-transformers-rom1504 
+tqdm
+timm
+numpy
+kornia
+webdataset
+omegaconf
+einops
+scikit-image
+pymcubes
+carvekit-colab
+open3d
+trimesh
+easydict
+nerfacc
+transforms3d
+lpips
+mesh2sdf
+imageio-ffmpeg==0.4.7
