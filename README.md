@@ -138,6 +138,18 @@ python train_renderer.py -i <output-folder-to-output>/0.png -n neus -b configs/n
 ```
 
 
-
 ## Acknowledgments
 This codebase borrows from most notably [SyncDreamer](https://github.com/liuyuan-pal/SyncDreamer) and [NeuS](https://github.com/Totoro97/NeuS).
+Many thanks to the authors for generously sharing their codes!
+
+
+## Citation
+If you find this repository helpful for your project, please consider citing our work. :)
+```
+@article{woo2023harmonyview,
+  title={HarmonyView: Harmonizing Consistency and Diversity in One-Image-to-3D}, 
+  author={Woo, Sangmin Woo and Park, Byeongjun and Go, Hyojun and Kim, Jin-Young and Kim, Changick},
+  journal={arXiv preprint arXiv:2312.15980},
+  year={2023},
+}
+```
