@@ -1,7 +1,7 @@
 # HarmonyView: Harmonizing Consistency and Diversity in One-Image-to-3D
 <!-- Arxiv Link, Project Link -->
 
-[//]: # (<a href=""><img src="https://img.shields.io/badge/arXiv-2310.07138-b31b1b.svg"></a>)
+<a href="https://arxiv.org/abs/2312.15980"><img src="https://img.shields.io/badge/arXiv-2312.15980-b31b1b.svg"></a>
 <a href="https://byeongjun-park.github.io/HarmonyView/"><img src="https://img.shields.io/badge/Project%20Page-online-brightgreen"></a>
 <a href="https://huggingface.co/spaces/byeongjun-park/HarmonyView"><img src="https://img.shields.io/badge/Live%20Demo-online-brightgreen"></a>
 
