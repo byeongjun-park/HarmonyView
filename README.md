@@ -148,7 +148,7 @@ If you find this repository helpful for your project, please consider citing our
 ```
 @article{woo2023harmonyview,
   title={HarmonyView: Harmonizing Consistency and Diversity in One-Image-to-3D}, 
-  author={Woo, Sangmin Woo and Park, Byeongjun and Go, Hyojun and Kim, Jin-Young and Kim, Changick},
+  author={Woo, Sangmin and Park, Byeongjun and Go, Hyojun and Kim, Jin-Young and Kim, Changick},
   journal={arXiv preprint arXiv:2312.15980},
   year={2023},
 }
