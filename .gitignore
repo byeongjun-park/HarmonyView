@@ -2,7 +2,6 @@
 ckpt/
 output_gso/
 output_gso_renderer/
-gso-eval/
 
 # ignore cache
 __pycache__/
