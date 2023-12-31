@@ -112,7 +112,7 @@ def make_tranforms(image_transforms):
 
 def make_multi_folder_data(paths, caption_files=None, **kwargs):
     """Make a concat dataset from multiple folders
-    Don't suport captions yet
+    Don't support captions yet
 
     If paths is a list, that's ok, if it's a Dict interpret it as:
     k=folder v=n_times to repeat that
