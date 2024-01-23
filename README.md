@@ -5,11 +5,13 @@
 <a href="https://byeongjun-park.github.io/HarmonyView/"><img src="https://img.shields.io/badge/Project%20Page-online-brightgreen"></a>
 <a href="https://huggingface.co/spaces/byeongjun-park/HarmonyView"><img src="https://img.shields.io/badge/Live%20Demo-online-brightgreen"></a>
 
-<!-- Please Insert generated Images. -->
-
-
 This repository contains the official pytorch implementation of the paper: "HarmonyView: Harmonizing Consistency and Diversity in One-Image-to-3D".
 In this repository, we release codes for the improved version of [Syncdreamer](https://arxiv.org/pdf/2309.03453.pdf) with a novel diffusion sampling technique.
+
+<!-- Please Insert generated Images. -->
+![teaser](assets/teaser.png)
+
+**HarmonyView for one-image-to-3D.** HarmonyView generates realistic 3D content using just a single image. It excels at maintaining visual and geometric consistency across generated views while enhancing the diversity of novel views, even in complex scenes.
 
 ## Updates
 
